@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="x-icon" href="img/logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5ceb6447bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-links" id="navlinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">BERANDA</a></li>
+				<li><a href="Tentang.html">TENTANG</a></li>
+				<li><a href="">SKILLS</a></li>
+				<li><a href="">BLOG</a></li>
+				<li><a href="Kontak.html">KONTAK</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Tentang Saya</h1>
+
+</section>
+
+<!--------Timeline-------->
+<Section class="timeline">
+	<div class="container left-container">
+		<div class="text-box-timeline">
+			<h2>Pendidikan Sekolah Dasar</h2>
+			<small>2005 - 2011</small>
+			<p>SD Negeri Suryalaya Bandung</p>
+			<span class="left-container-arrow"></span>
+		</div>
+	</div>
+	<div class="container right-container">
+		<div class="text-box-timeline">
+			<h2>Pendidikan Sekolah Menengah Pertama</h2>
+			<small>2011 - 2014</small>
+			<p>SMP Negeri 43 Bandung</p>
+			<span class="right-container-arrow"></span>
+		</div>
+	</div>
+	<div class="container left-container">
+		<div class="text-box-timeline">
+			<h2>Pendidikan Sekolah Menengah Atas</h2>
+			<small>2014 - 2017</small>
+			<p>SMA Negeri 22 Bandung</p>
+			<span class="left-container-arrow"></span>
+		</div>
+	</div>
+	<div class="container right-container">
+		<div class="text-box-timeline">
+			<h2>Perguruan Tinggi</h2>
+			<small>2017 - 2021</small>
+			<p>Institut Teknologi Nasional Bandung <br>Perencanaan Wilayah dan Kota
+			</p>
+			<span class="right-container-arrow"></span>
+		</div>
+	</div>
+</Section>
+
+<!-----Footer------>
+
+<section class="footer">
+	<h4>Informasi Umum</h4>
+	<p>Untuk berdiskusi silakan kunjungi media sosial saya di Facebook, Instagram, Linkedin, dan Youtube.</p>
+
+	<div class="icons">
+		<a href="https://www.facebook.com/abdurrahman.qeis"><i class="fa-brands fa-facebook-f"></i></a>
+		<a href="https://www.instagram.com/qeisahmad/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://www.youtube.com/c/AbdurrahmanQeis"><i class="fa-brands fa-youtube"></i></a>
+		<a href="https://www.linkedin.com/in/qeisahmad/"><i class="fa-brands fa-linkedin"></i></a>
+	</div>
+	<p>Project pertama harap maklum hehe</p>
+</section>
+
+<!----JavaScript for Tonggle Menu---->
+
+<script type="text/javascript">
+	function showMenu() {
+		// body...
+		navlinks.style.right = "0";
+	}
+	function hideMenu() {
+		// body...
+		navlinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
