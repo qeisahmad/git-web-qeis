@@ -34,13 +34,14 @@
 <!--------Kontak-------->
 <section id="kontak">
 	<div class="kontak-container">
-		<form onsubmit="sendEmail(); reset(); return false;" class="formulir">
+		<form name="formulir-kontak-website" class="formulir">
 			<h3>Hubungi Saya</h3>
-			<input type="text" id="nama" placeholder="Nama Anda" required>
-			<input type="email" id="email" placeholder="Email Anda" required>
-			<input type="text" id="telepon" placeholder="Nomor Telepon" required>
-			<textarea id="pesan" rows="4" placeholder="Hubungi Saya Untuk Diskusi"></textarea>
-			<button type="submit">Kirim Pesan</button>
+			<input name="nama" type="text" id="nama" placeholder="Nama Anda" required>
+			<input name="email" type="email" id="email" placeholder="Email Anda" required>
+			<input name="telepon" type="text" id="telepon" placeholder="Nomor Telepon" required>
+			<textarea name="pesan" id="pesan" rows="4" placeholder="Hubungi Saya Untuk Diskusi"></textarea>
+			<button class="submit" type="submit">Kirim Pesan</button>
+			<div class="sukses" id="sukses" >Pesan anda sudah berhasil dikirim</div>
 		</form>
 	</div>
 </section>
@@ -73,5 +74,21 @@
 	}
 </script>
 
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyXU-l3ggsAt-uZIUNP_7jjZ4wBYtVoFzzgA296kIgtxRe_m4VgzQ0m0CXjMnE4sX8PmQ/exec'
+	const form = document.forms['formulir-kontak-website']
+	const alert = document.querySelector('.sukses')
+	
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			sukses.style.display = 'block';
+			form.reset();
+			console.log('Success!', response);
+		})
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
 </body>
 </html>

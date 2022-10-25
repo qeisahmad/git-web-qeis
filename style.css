@@ -126,6 +126,9 @@ nav .fa{
 	.nav-links ul{
 		padding: 30px;
 	}
+	nav img{
+		width: 100px;
+	}
 }
 
 /*----- Minat -----*/
@@ -179,6 +182,9 @@ h3{
 @media(max-width: 700px){
 	.row{
 		flex-direction: column;
+	}
+	.minat-col{
+		margin-bottom: 8%;
 	}
 }
 
@@ -434,7 +440,7 @@ h3{
 	left: -15px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 	.timeline{
 		margin: 50px auto;
 	}
@@ -494,6 +500,19 @@ h3{
 	font-size: 14px;
 }
 
+.sukses{
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 16px;
+	color: green;
+	display: none;
+}
+
+
 .formulir button{
 	padding: 15px;
 	background: rgba(28, 125, 253, 0.7);
@@ -506,6 +525,13 @@ h3{
 	margin: 20px auto 0;
 	border-radius: 30px;
 }
+
+@media screen and (max-width: 700px){
+	.formulir button{
+		margin: 0px auto 0;
+	}
+}
+
 
 /*---------Fontawesome----*/
 .fa-instagram {
